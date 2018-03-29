@@ -3,13 +3,30 @@
 
 [[projects]]
   branch = "master"
+  name = "github.com/mitchellh/mapstructure"
+  packages = ["."]
+  revision = "00c29f56e2386353d58c599509e8dc3801b0d716"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/yuin/gluamapper"
+  packages = ["."]
+  revision = "d836955830e75240d46ce9f0e6d148d94f2e1d3a"
+
+[[projects]]
+  branch = "master"
   name = "github.com/yuin/gopher-lua"
-  packages = [".","ast","parse","pm"]
+  packages = [
+    ".",
+    "ast",
+    "parse",
+    "pm"
+  ]
   revision = "84ea3a3c79b3c4b3b39606cc96f255cd63635ce0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "0f54edc8a76915cbd6f90ea30184d916d120db32b93b51b7e611312edf404f4a"
+  inputs-digest = "7f4a185eb6ee83e1ee83eaa7c89132a9abc7b9ed2d01275ea6557590bcfaf191"
   solver-name = "gps-cdcl"
   solver-version = 1
