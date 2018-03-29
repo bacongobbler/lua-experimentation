@@ -11,11 +11,11 @@ formula = {
 
 When upgrading, make sure to `rm -rf ~/.draft` before bootstrapping Draft according to the installation guide:
 
-    https://github.com/Azure/draft/blob/v#{version}/docs/install.md
+    https://github.com/Azure/draft/blob/v]] .. version .. [[/docs/install.md
 
 If you bootstrapped an application using `draft create`, you'll also want to remove the files `draft create` generated before running `draft create && draft up` again.
 
 Please make sure to read the release notes for further information:
 
-    https://github.com/Azure/draft/releases/tag/v#{version}]]
+    https://github.com/Azure/draft/releases/tag/v]] .. version .. [[]]
 }
