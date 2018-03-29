@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"path/filepath"
 
 	"github.com/yuin/gluamapper"
 	"github.com/yuin/gopher-lua"
@@ -32,7 +34,7 @@ type Formula struct {
 func main() {
 	L := lua.NewState()
 	defer L.Close()
-	if err := L.DoFile("main.lua"); err != nil {
+	if err := L.DoFile(filepath.Join("Formula", fmt.Sprintf("%s.lua", os.Args[1]))); err != nil {
 		panic(err)
 	}
 	var formula Formula
